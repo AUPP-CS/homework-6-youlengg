@@ -12,8 +12,9 @@ def get_weather(city):
     }
     
 
-    # the process before completed this code is, the live_date was printed for a time and were used to check the dictionary, key and value, to return the correct data that we need
-    # it's the same as reading the JSON api respone example in the website
+    # to get any rquired key, value of data, checking and reab about the JSON api respone example in the website is very helpful
+    # where the example provide a respone of data, so that we can access to the key and value that we need for our weather checker app
+    
     live_data = requests.get(endpoint, params=params).json()
 
     # the cod != 404 is to check if the name of city is correct or not
